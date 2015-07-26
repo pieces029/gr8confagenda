@@ -41,7 +41,7 @@ class SessionListActivity extends FragmentActivity
 
     private final static String SELECTED_TAB = "selectedTab";
     public static final String DATE_FORMAT = 'yyyy-MM-dd'
-    public static final String BASE_DATE = '2015-06-02'
+    public static final String BASE_DATE = '2015-07-29'
 
     private BroadcastReceiver broadcastReceiver
 
@@ -155,7 +155,7 @@ class SessionListActivity extends FragmentActivity
     private void populateActionBar() {
         def bar = getActionBar()
         bar.navigationMode = ActionBar.NAVIGATION_MODE_TABS
-        bar.addTab bar.newTab().setText('University Day').setTabListener(this)
+        bar.addTab bar.newTab().setText('Workshop Day').setTabListener(this)
         bar.addTab bar.newTab().setText('Conference Day 1').setTabListener(this)
         bar.addTab bar.newTab().setText('Conference Day 2').setTabListener(this)
     }
